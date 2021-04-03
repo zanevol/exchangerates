@@ -1,28 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+		<ExchangeRates/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ExchangeRates from "@/components/ExchangeRates";
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {ExchangeRates}
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+#app 
+	max-width: 1140px
+	height: 100vh
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 0 auto
+	background: #F2F2F2
+	font-family: 'Roboto', sans-serif
 </style>
